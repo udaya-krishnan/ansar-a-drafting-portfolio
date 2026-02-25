@@ -30,9 +30,12 @@ const Header = () => {
       }`}
     >
       <div className="section-container flex items-center justify-between h-16">
-        <a href="#" className="font-display font-bold text-lg text-foreground tracking-tight">
-          ANSAR<span className="text-primary"> A</span>
-        </a>
+        <a
+  href="#"
+  className="pl-2 sm:pl-0 font-display font-bold text-lg text-foreground tracking-tight"
+>
+  ANSAR<span className="text-primary"> A</span>
+</a>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1">
