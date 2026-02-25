@@ -2,8 +2,7 @@ import { MapPin, Download, Mail } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center section-padding pt-28 md:pt-32">
-      <div className="section-container w-full">
+<section className="relative min-h-[90vh] flex items-center section-padding pt-16 sm:pt-20 md:pt-32">      <div className="section-container w-full">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent text-accent-foreground text-xs font-medium mb-6">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -35,13 +34,14 @@ const HeroSection = () => {
               <Mail size={16} />
               Contact Me
             </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-card text-foreground font-medium text-sm hover:bg-secondary transition-colors"
-            >
-              <Download size={16} />
-              Download CV
-            </a>
+           <a
+  href="/ANSAR _ CV.pdf"
+  download
+  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-card text-foreground font-medium text-sm hover:bg-secondary transition-colors"
+>
+  <Download size={16} />
+  Download CV
+</a>
           </div>
         </div>
       </div>
