@@ -24,19 +24,22 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            {highlights.map(({ icon: Icon, label }) => (
-              <div
-                key={label}
-                className="flex items-center gap-3 p-4 rounded-lg bg-background border border-border hover:border-primary/30 hover:shadow-sm transition-all"
-              >
-                <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center shrink-0">
-                  <Icon size={18} className="text-primary" />
-                </div>
-                <span className="text-sm font-medium text-foreground">{label}</span>
-              </div>
-            ))}
-          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  {highlights.map(({ icon: Icon, label }) => (
+    <div
+      key={label}
+      className="flex items-start gap-3 p-4 rounded-lg bg-background border border-border hover:border-primary/30 hover:shadow-sm transition-all overflow-hidden"
+    >
+      <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center shrink-0">
+        <Icon size={18} className="text-primary" />
+      </div>
+
+      <span className="text-sm font-medium text-foreground leading-snug break-words">
+        {label}
+      </span>
+    </div>
+  ))}
+</div>
         </div>
       </div>
     </section>

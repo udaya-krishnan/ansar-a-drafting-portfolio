@@ -10,7 +10,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-800 text-foreground leading-tight tracking-tight mb-4">
-            ANSAR A
+            ANSAR.A
           </h1>
 
           <p className="text-xl sm:text-2xl font-display font-600 text-primary mb-4">
